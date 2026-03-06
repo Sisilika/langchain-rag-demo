@@ -1,9 +1,8 @@
-import tempfile
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from sentence_transformers import SentenceTransformer
 from langchain_community.vectorstores import FAISS
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
+import tempfile
 
 
 def process_document(uploaded_file):
