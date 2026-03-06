@@ -1,6 +1,8 @@
 import requests
 
-OPENROUTER_API_KEY = "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"
+import os
+
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 def call_llm(prompt):
 
